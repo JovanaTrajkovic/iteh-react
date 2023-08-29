@@ -11,12 +11,11 @@ function KontaktForma(props) {
 
   return (
     <div className="kontact-forma-main-div">
-            <h2 className="kontakt-naslov-forme">Zakazite Vas termin</h2> 
-            <div className="element-ime">
+           <div className="element-ime">
                 <label htmlFor="form-label">Vase ime i prezime</label> 
                 <input type="text" className="form-control" value={poruka.ime} onChange={e => setPoruka({ ...poruka, ime: e.target.value })} /> 
             </div>
-            <div className="element-mail-lab">
+            <div className="element-mail-agencija">
                 <label htmlFor="form-label">Mejl adresa agencije</label>
                 <input type="email" className="form-control" value={poruka.email_primalac} onChange={e => setPoruka({ ...poruka, email_primalac: e.target.value })} />
             </div>
